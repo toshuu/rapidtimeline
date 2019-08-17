@@ -1,0 +1,255 @@
+/* fallback */
+
+
+
+.preloader {
+  width: 50px;
+  height: 50px;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 100%;
+  animation: clockwise 0.4s linear infinite;
+}
+
+@keyframes clockwise {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.preloader--red {
+  border-color: #f09819 #ff5858 #f09819 #ff5858;
+}
+
+
+.preloader--deep-orange {
+  border-color: #FF5722 #aa0000 #f44336 #a0150a;
+}
+
+
+
+	body{
+background-color:#fff
+}	
+		
+@font-face {
+    font-family: mont;
+    src: url('font/mont.ttf');
+}	 
+
+
+
+hr.style12 {
+	height: 6px;
+	background: url(img/hr-12blue.png) repeat-x 0 0;
+    border: 0;
+}
+.id-display + p {
+    display: inline;
+	
+}
+
+.scrollup {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    display: none;
+    text-indent: -9999px;
+    background-color: #f44336;
+	border-radius:200px;
+	opacity:.7;
+	z-index:999;
+} 
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Roboto';
+    font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+}
+
+
+
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/icons.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.timeline {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  padding: 0 62px;
+  margin: 0;
+  list-style: none;
+}
+.timeline::before {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  padding-right: 11px;
+  border-right: 2px solid #ddd;
+  content: "";
+}
+.timeline__item {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  padding: 62px 0;
+}
+.timeline__step {
+  padding-right: 62px;
+}
+.timeline__step__marker {
+  position: relative;
+  display: table-cell;
+  height: 24px;
+  min-height: 24px;
+  width: 24px;
+  min-width: 24px;
+  border: 4px solid #F2F2F2;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 0;
+}
+.timeline__step__marker--red {
+  border-color: #FF3467;
+}
+.timeline__step__marker--yellow {
+  border-color: #FFCD42;
+}
+.timeline__step__marker--blue {
+  border-color: #18D0BF;
+}
+.timeline__step__marker--salmon {
+  border-color: #F48A6D;
+}
+.timeline__step__marker--purple {
+  border-color: #C178FA;
+}
+.timeline__time {
+  padding-right: 126px;
+  font-size: 26px;
+}
+.timeline__title {
+  padding-bottom: 26px;
+  font-size: 32px;
+}
+.timeline__points {
+  padding: 0;
+  list-style: none;
+  font-size: 24px;
+  color: #77777D;
+}
+.timeline__points > * {
+  padding: 0 0 12px 0;
+}
+
+/* For mobile!
+ */
+@media (max-width: 768px) {
+  .card {
+    max-width: 375;
+  }
+
+  .timeline {
+    padding: 0 35.42857px;
+  }
+  .timeline::before {
+    padding-right: 6.28571px;
+  }
+  .timeline__item {
+    padding: 35.42857px 0;
+  }
+  .timeline__step {
+    padding-right: 35.42857px;
+  }
+  .timeline__step__marker {
+    height: 13.71429px;
+    min-hieght: 13.71429px;
+    width: 13.71429px;
+    min-width: 13.71429px;
+    border-width: 2.28571px;
+  }
+  .timeline__time {
+    padding-right: 72px;
+    font-size: 14.85714px;
+  }
+  .timeline__title {
+    padding-bottom: 14.85714px;
+    font-size: 18.28571px;
+  }
+  .timeline__points {
+    font-size: 13.71429px;
+  }
+  .timeline__points > * {
+    padding-bottom: 6.85714px;
+  }
+}
+/* Display stuff
+ */
+html {
+
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+html, body {
+  line-height: 1.5rem;
+  font-family: "Muli", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.card {
+  background-color: white;
+  max-width: 750px;
+  margin: 0 auto;
+  height: 100%;
+  -moz-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  display: table;
+}
+
+
