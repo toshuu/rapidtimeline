@@ -52,7 +52,6 @@ if(oU.name){
 
 /*
 LS.del('oUser');*/
-  document.write("<script src='js/"+oU.name+".js'></"+"script>"); 
 
 var stats = document.getElementById('stats');
   stats.innerHTML = + localStorage.clickcount + "" ;
@@ -118,7 +117,6 @@ if(oU.name){
 
 /*
 LS.del('oUser');*/
-  document.write("<script src='js/"+oU.name+".js'></"+"script>"); 
 
 var stats = document.getElementById('stats');
   stats.innerHTML = + localStorage.clickcount + "" ;
