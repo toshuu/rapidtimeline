@@ -1,5 +1,34 @@
 /* fallback */
 
+
+
+.preloader {
+  width: 50px;
+  height: 50px;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 100%;
+  animation: clockwise 0.4s linear infinite;
+}
+
+@keyframes clockwise {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.preloader--red {
+  border-color: #f09819 #ff5858 #f09819 #ff5858;
+}
+
+
+.preloader--deep-orange {
+  border-color: #FF5722 #aa0000 #f44336 #a0150a;
+}
+
+
+
 	body{
 background-color:#fff
 }	
